@@ -1,6 +1,8 @@
-import React from 'react';
+
+import {useState} from 'react';
+
 function Counter(props){
-  const[value,setValue]=React.useState(props.initialValue);
+  const[value,setValue]=useState(props.initialValue);
   const handleIncrement=()=>{
     if(value==10){
         return
